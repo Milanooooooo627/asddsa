@@ -13,7 +13,7 @@ if not creds_path.exists():
 
 def get_creds():
     import json
-    with creds_path.open('r', encoding='utf-8') as f:
+    with creds_path.open('r', encoding='utf-8-sig') as f:
         data = json.load(f)
     if 'email' not in data or 'passwordHash' not in data or 'licenseKey' not in data:
         raise ValueError('Invalid credentials format')
