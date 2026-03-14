@@ -1,0 +1,11 @@
+app = "proton-cloud-auth"
+kill_signal = "SIGINT"
+kill_timeout = 5
+[build]
+[env]
+PORT = "8080"
+[experimental]
+auto_rollback = true
+# If you want to specify internal_port, add this section:
+# [http_service]
+# internal_port = 8080

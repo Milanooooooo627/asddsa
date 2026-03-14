@@ -1,0 +1,23 @@
+[Version]
+Class=IEXPRESS
+[Options]
+PackagePurpose=InstallApp
+ShowInstallProgramWindow=0
+HideExtractAnimation=1
+UseLongFileName=1
+InsideCompressed=0
+CAB_FixedSize=0
+RebootMode=NoRestart
+TargetName=%CD%\ProtonUI.exe
+FriendlyName=Proton UI
+InstallProgram=Launch-ProtonUI.bat
+PostInstallCmd=<none>
+InstallPrompt=
+DisplayLicense=
+FinishMessage=
+[SourceFiles]
+SourceFiles0=.
+[SourceFiles0]
+File1=Launch-ProtonUI.bat
+File2=ProtonUI.html
+[Strings]
