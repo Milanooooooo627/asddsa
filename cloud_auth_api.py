@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from pathlib import Path
 import os
 
 app = Flask(__name__)
+CORS(app)
 creds_path = Path(__file__).parent / 'credentials.json'
 ADMIN_TOKEN = os.getenv('PROTON_ADMIN_TOKEN', 'supersecret-admin-token')
 
