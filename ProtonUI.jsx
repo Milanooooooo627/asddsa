@@ -85,11 +85,9 @@ function Dashboard() {
     <div style={styles.dashboard}>
       <Sidebar />
       <div style={styles.main}>
-        <h1 style={styles.libraryTitle}>Our Library</h1>
-        <p style={styles.subtitle}>Select the product you wish to use, linked to your license.</p>
-        <Product name="5M Spoofer (Temporary)" date="17/11/2025" />
-        <Product name="5M Spoofer (Permanent)" date="17/11/2025" />
-        <Product name="5M Check Bypasser" date="17/11/2025" />
+        <h1 style={styles.libraryTitle}>Proton Panel</h1>
+        <p style={styles.subtitle}>Manage your license and access the Temp HWID Spoofer.</p>
+        <Product name="Temp HWID Spoofer" date="Active" />
       </div>
     </div>
   );
@@ -98,9 +96,9 @@ function Dashboard() {
 function Sidebar() {
   return (
     <div style={styles.sidebar}>
-      <div style={styles.sideLogo}>P</div>
+      <div style={styles.sideLogo}>Proton</div>
       <div style={styles.version}>4.0</div>
-      <div style={styles.sideButtons}><div>📚</div><div>⚙️</div><div>🚪</div></div>
+      <div style={styles.sideButtons}><div>🔑</div><div>⚙️</div><div>🚪</div></div>
     </div>
   );
 }
